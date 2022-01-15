@@ -31,7 +31,7 @@ require 'open-uri'
 
 def find_icon(terms, format)
   # url = URI.parse("http://itunes.apple.com/search?term=#{CGI.escape(terms)}&entity=#{entity}")
-  url = URI.parse("http://itunes.apple.com/lookup?id=#{terms}")
+  url = URI.parse("http://itunes.apple.com/lookup?id=#{terms}&country=cn")
   # puts url
   # res = Net::HTTP.get_response(url).body
   res = open(url).read
